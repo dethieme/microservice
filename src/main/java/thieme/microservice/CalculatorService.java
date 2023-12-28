@@ -2,19 +2,19 @@ package thieme.microservice;
 
 public class CalculatorService {
 
-    public int add(Integer firstSummand, Integer secondSummand) {
+    public double add(double firstSummand, double secondSummand) {
         return firstSummand + secondSummand;
     }
 
-    public int subtract(Integer minuend, Integer subtrahend) {
+    public double subtract(double minuend, double subtrahend) {
         return minuend - subtrahend;
     }
 
-    public int multiply(Integer multiplier, Integer multiplicand) {
+    public double multiply(double multiplier, double multiplicand) {
         return multiplier * multiplicand;
     }
 
-    public int divide(Integer numerator, Integer divisor) {
-        return numerator / divisor;
+    public double divide(double dividend, double divisor) {
+        return dividend / divisor;
     }
 }

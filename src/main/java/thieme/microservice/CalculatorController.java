@@ -12,26 +12,26 @@ public class CalculatorController {
     private final CalculatorService calculatorService = new CalculatorService();
 
     @GetMapping("/add")
-    public int add(@RequestParam(value = "firstSummand", defaultValue = "0") Integer firstSummand,
-                   @RequestParam(value = "secondSummand", defaultValue = "0") Integer secondSummand) {
+    public double add(@RequestParam(value = "firstSummand") double firstSummand,
+                      @RequestParam(value = "secondSummand") double secondSummand) {
         return calculatorService.add(firstSummand, secondSummand);
     }
 
     @GetMapping("/subtract")
-    public int subtract(@RequestParam(value = "minuend", defaultValue = "0") Integer minuend,
-                        @RequestParam(value = "subtrahend", defaultValue = "0") Integer subtrahend) {
+    public double subtract(@RequestParam(value = "minuend") double minuend,
+                           @RequestParam(value = "subtrahend") double subtrahend) {
         return calculatorService.subtract(minuend, subtrahend);
     }
 
     @GetMapping("/multiply")
-    public int multiply(@RequestParam(value = "multiplier", defaultValue = "0") Integer multiplier,
-                        @RequestParam(value = "multiplicand", defaultValue = "0") Integer multiplicand) {
+    public double multiply(@RequestParam(value = "multiplier") double multiplier,
+                           @RequestParam(value = "multiplicand") double multiplicand) {
         return calculatorService.multiply(multiplier, multiplicand);
     }
 
     @GetMapping("/divide")
-    public int divide(@RequestParam(value = "numerator", defaultValue = "0") Integer numerator,
-                      @RequestParam(value = "divisor", defaultValue = "1") Integer divisor) {
-        return calculatorService.divide(numerator, divisor);
+    public double divide(@RequestParam(value = "dividend") double dividend,
+                         @RequestParam(value = "divisor") double divisor) {
+        return calculatorService.divide(dividend, divisor);
     }
 }

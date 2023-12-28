@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "f9b9c854-74c3-4239-ad87-40944181fa59",
+		"name": "Calculator Microservice",
+		"description": "A small collection for testing the four REST API endpoints of the Calculator microservice.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5898388"
+	},
+	"item": [
+		{
+			"name": "Add",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/calculator/add?firstSummand=5&secondSummand=6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"calculator",
+						"add"
+					],
+					"query": [
+						{
+							"key": "firstSummand",
+							"value": "5"
+						},
+						{
+							"key": "secondSummand",
+							"value": "6"
+						}
+					]
+				},
+				"description": "Endpoint for calculating the sum of two numbers. Query params `firstSummand` and `secondSummand` are required and prefilled with test numbers."
+			},
+			"response": []
+		},
+		{
+			"name": "Subtract",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/calculator/subtract?minuend=3&subtrahend=13",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"calculator",
+						"subtract"
+					],
+					"query": [
+						{
+							"key": "minuend",
+							"value": "3"
+						},
+						{
+							"key": "subtrahend",
+							"value": "13"
+						}
+					]
+				},
+				"description": "Endpoint for calculating the difference of two numbers. Query params `minuend` and `subtrahend` are required and prefilled with test numbers."
+			},
+			"response": []
+		},
+		{
+			"name": "Multiply",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/calculator/multiply?multiplier=7&multiplicand=9",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"calculator",
+						"multiply"
+					],
+					"query": [
+						{
+							"key": "multiplier",
+							"value": "7"
+						},
+						{
+							"key": "multiplicand",
+							"value": "9"
+						}
+					]
+				},
+				"description": "Endpoint for calculating the product of two numbers. Query params `multiplier` and `multiplicand` are required and prefilled with test numbers."
+			},
+			"response": []
+		},
+		{
+			"name": "Divide",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/calculator/divide?dividend=13&divisor=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"calculator",
+						"divide"
+					],
+					"query": [
+						{
+							"key": "dividend",
+							"value": "13"
+						},
+						{
+							"key": "divisor",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Endpoint for calculating the quotient of two numbers. Query params `dividend` and `divisor` are required and prefilled with test numbers. `divisor` must be `!= 0`."
+			},
+			"response": []
+		}
+	]
+}
