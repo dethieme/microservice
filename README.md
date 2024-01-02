@@ -70,7 +70,7 @@ Endpoint for calculating the quotient of two numbers.
 <br>
 
 ## Postman
-The four endpoints can be tested locally via Postman. An importable request collection
+The five endpoints can be tested locally via Postman. An importable request collection
 can be found in the ["./postman" directory](/postman). The endpoints are documented in there as well.
 
 <br>
