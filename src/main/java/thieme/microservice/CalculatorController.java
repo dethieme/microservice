@@ -11,6 +11,11 @@ public class CalculatorController {
 
     private final CalculatorService calculatorService = new CalculatorService();
 
+    @GetMapping
+    public String hello() {
+        return "Hello Mr. Edlich, I'm a calculator!";
+    }
+
     @GetMapping("/add")
     public double add(@RequestParam(value = "firstSummand") double firstSummand,
                       @RequestParam(value = "secondSummand") double secondSummand) {

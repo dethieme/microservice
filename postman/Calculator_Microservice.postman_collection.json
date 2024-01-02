@@ -1,12 +1,21 @@
 {
 	"info": {
-		"_postman_id": "f9b9c854-74c3-4239-ad87-40944181fa59",
+		"_postman_id": "e3dfe869-0d56-4bbe-a5d3-04e4e14d4215",
 		"name": "Calculator Microservice",
 		"description": "A small collection for testing the four REST API endpoints of the Calculator microservice.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "5898388"
 	},
 	"item": [
+		{
+			"name": "Hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "Endpoint for saying hello to the microservice!"
+			},
+			"response": []
+		},
 		{
 			"name": "Add",
 			"request": {
