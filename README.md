@@ -67,11 +67,13 @@ Endpoint for calculating the quotient of two numbers.
 | dividend | number |
 | divisor  | number |
 
+<br>
 
 ## Postman
 The four endpoints can be tested locally via Postman. An importable request collection
 can be found in the ["./postman" directory](/postman). The endpoints are documented in there as well.
 
+<br>
 
 ## Docker
 The microservice can also be deployed on Docker. To build an image run the following 
